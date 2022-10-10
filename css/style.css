@@ -33,6 +33,29 @@ h1{
 /*div{
     background-color: rgb(121, 81, 189);
 }*/
+h2{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    background-color: rgb(186, 35, 220);
+    padding: 100px;
+    
+}
+#about{
+    display: inline-flex;
+    font-size: 30px;
+    
+}
+#about> p{
+    padding-left: 20px;
+}
+#map{
+    display: inline-flex;
+    font-size: 30px;
+}
+#map > p{
+    padding-left: 30px;
+}
 footer{
     display: flex-inline;
     flex-flow: row wrap;
