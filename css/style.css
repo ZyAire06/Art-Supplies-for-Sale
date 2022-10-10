@@ -1,0 +1,40 @@
+.navbar{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: 30px;
+}
+.navbar :hover{
+    background-color: rgb(158, 64, 235);
+    color: black;
+}
+nav{
+    background-color: rgb(186, 35, 220);
+    border-radius: 30px;
+    
+}
+/*body{
+    background-color: aqua;                                   
+}*/
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    /*add pics on the side*/
+
+}
+.pics{
+    display: flex-inline;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 35px;
+}
+/*div{
+    background-color: rgb(121, 81, 189);
+}*/
+footer{
+    display: flex-inline;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
