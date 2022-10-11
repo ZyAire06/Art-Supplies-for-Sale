@@ -15,13 +15,14 @@ nav{
     
 }
 /*body{
-    background-color: aqua;                                   
+    background-color: aqua;
+    display:flex;
+    flex-wrap:wrap;                                   
 }*/
 
 h1{
     text-align: center;
     font-size: 40px;
-    /*add pics on the side*/
 
 }
 .pics{
