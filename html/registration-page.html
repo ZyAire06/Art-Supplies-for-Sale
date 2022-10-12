@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS only
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">-->
+    <!-- JavaScript Bundle with Popper 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+     crossorigin="anonymous"></script> -->
+    
+ 
     <link rel="stylesheet" href="../css/style.css">
     <title>Registration Page</title>
 </head>
@@ -11,30 +22,53 @@
 <div>
     <header>
         <h1> <img  class= "pics" src="../images/header-img.png" alt="paint and paint brush">
-            Z's Crafts
+            <a href="/Art-Supplies-for-Sale/index.html">Z's Crafts </a>
            <img class= "pics" src="../images/header-img-2.jfif" alt="Art Suupplies">
        </h1>
-        <img src="../images/art-supplies.jpg" alt="Pic of art supplies" width="1500px" height="600px">
+        <nav>
+            <ul class="navbar">
+                <li> <a href="art-supplies.html">Art Supplies</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href= "fabrics.html">Fabrics</a></li>
+                <li><a href="paints.html">Paints</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <form action="" id="account">
-            <label for="first name"> First Name</label>
-            <input type="text">
-            <label for="last name"> Last Name</label>
-            <input type="text">
-            <label for="email">Email</label>
-            <input type="text">
-            <label for="confirm email">Confirm Email</label>
-            <input type="text">
-            <label for="username">Username</label>
-            <input type="text">
-            <label for="password">Password</label>
-            <input type="text">
-            <label for="confirm password"> Confirm Password</label>
-            <input type="text">
+    
         
+        <form action="">
+            <div class="container-2">
+                <h3>Create Account</h3>
+
+                <label class="first-name" for="first name"> First Name</label>
+               <input type="text" name="first name" id="first-name"><br>
+
+                <label class="last-name" for="last name"> Last Name</label>
+                 <input type="text" name="last name" id="last-name"><br>
+            
+                
+                <label class="email"  for="email">Email</label>
+                <input type="text" name="email" id="email"><br>
+
+                <label  class="question" for="how did you hear about us"> How did you hear about us?</label><br>
+               
+            
+              
+                <label  class="username" for="username">Username</label>
+                <input type="text" name="username" id="username"> <br>
+
+                <label class="password" for="password">Password</label>
+               <input type="password" name="enter password" id="password"><br>
+
+                <label class="password for="confirm password"> Confirm</label>
+                <input type="password" name="enter password" id="password">
+
+                <button class="login-button"> Submit</button>
+            </div>
         </form>
-    </main>
+        
+       
+    
 </div>
 </body>
 <footer>
