@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- CSS only-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
-    crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper--> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
-     crossorigin="anonymous"></script> 
-    
- 
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Registration Page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Registration Page</title>
 </head>
+
 <body>
-<div>
+  <div>
     <header>
-        <h1> <img  class= "pics" src="../images/header-img.png" alt="paint and paint brush">
-            <a href="/Art-Supplies-for-Sale/index.html">Z's Crafts </a>
-           <img class= "pics" src="../images/header-img-2.jfif" alt="Art Suupplies">
-       </h1>
-       <nav class="navbar navbar-expand-lg bg-light">
+          
+      <img class="navbar-brand" src="images/header-img.png" alt="paint and paint brush">
+      <h1>Z's Crafts</h1>
+      <img class="navbar-brand" src="images/header-img-2.jfif" alt="Art Suupplies">
+      
+      <nav class="navbar navbar-expand-lg bg-light">
 
         <div class="container-fluid">
 
-          <img  class="navbar-brand" src="../images/header-img.png" alt="paint and paint brushes"> 
-          Z's Crafts  <img class= "navbar-brand" src="../images/header-img-2.jfif" alt="Art Suupplies">
+          <img class="navbar-brand" src="../images/header-img.png" alt="paint and paint brushes">
+          Z's Crafts <img class="navbar-brand" src="../images/header-img-2.jfif" alt="Art Suupplies">
           <!-- Ask kevin about imgs -->
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-           data-bs-target="#navbarScroll" aria-controls="navbarScroll" 
-           aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarScroll">
 
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                
+
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                
-                <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Login
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="">Create Account</a></li>
                   <li><a class="dropdown-item" href="login-page.html">Login</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
                   <li><a class="dropdown-item" href="#">Membership Infomation</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="art-supplies.html">Art Supplies</a>
               </li>
-             
+
               <li class="nav-item">
                 <a class="nav-link" href="canvas.html">Canvas</a>
-              </li> 
-               <li class="nav-item">
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="fabrics.html">Fabrics</a>
               </li>
               <li class="nav-item">
@@ -80,46 +83,52 @@
         </div>
       </nav>
     </header>
-    
-        
-        <form action="">
-            <div class="container-2">
-                <h3>Create Account</h3>
 
-                <label class="first-name" for="first name"> First Name</label>
-               <input type="text" name="first name" id="first-name"><br>
 
-                <label class="last-name" for="last name"> Last Name</label>
-                 <input type="text" name="last name" id="last-name"><br>
-            
-                
-                <label class="email"  for="email">Email</label>
-                <input type="text" name="email" id="email"><br>
+    <form action="">
+      <div class="container-2">
+        <h3>Create Account</h3>
 
-                <label  class="question" for="how did you hear about us"> How did you hear about us?</label><br>
-               
-            
-              
-                <label  class="username" for="username">Username</label>
-                <input type="text" name="username" id="username"> <br>
+        <label class="first-name" for="first name"> First Name</label>
+        <input type="text" name="first name" id="first-name"><br>
 
-                <label class="password" for="password">Password</label>
-               <input type="password" name="enter password" id="password"><br>
+        <label class="last-name" for="last name"> Last Name</label>
+        <input type="text" name="last name" id="last-name"><br>
 
-                <label class="password for="confirm password"> Confirm</label>
-                <input type="password" name="enter password" id="password">
 
-                <button class="login-button"> Submit</button>
-            </div>
-        </form>
-        
-       
-    
-</div>
+        <label class="email" for="email">Email</label>
+        <input type="text" name="email" id="email"><br>
+
+        <label class="question" for="how did you hear about us"> How did you hear about us?</label><br>
+
+
+
+        <label class="username" for="username">Username</label>
+        <input type="text" name="username" id="username"> <br>
+
+        <label class="password" for="password">Password</label>
+        <input type="password" name="enter password" id="password"><br>
+
+        <label class="password for=" confirm password"> Confirm</label>
+        <input type="password" name="enter password" id="password">
+
+        <button class="login-button"> Submit</button>
+      </div>
+    </form>
+
+
+
+  </div>
+  <footer>
+    <h2> Contact and Follow Us: </h2>
+     <img src="./images/footer-img.jpg" alt="phone clipart" width="50px"> <p>>Call: 412-###-###</p>
+
+    <img src="./images/footer-img-2.jpg" alt="Email Icon" width="50px"> <p></p>Email: zscrafts@gmail.com</p>
+    <div class="social">
+      <a href=""><img src="./images/footer-img-3.jpg" alt="Instagram logo" width="60px"></a>
+      <a href=""><img src="./images/footer-img-4.jpg" alt="Tiktok logo" width="60px"></a>
+
+    </div>
+  </footer>
 </body>
-<footer>
-    <h2>contact us</h2>
-    <p>Call: 412-###-###</p>
-    <p>Email: zscrafts@gmail.com</p>
-</footer>
 </html>

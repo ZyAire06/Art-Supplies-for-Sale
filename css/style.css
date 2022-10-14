@@ -63,7 +63,7 @@ h2{
     padding-left: 30px;
 }
 
-h3{
+h4{
     text-align: center;
     font-size: 35px;
     padding-top: 20px;
@@ -153,37 +153,50 @@ h3{
   border-radius: 15px;
 }
 .supplies{
-    max-width: 100%;
-    height: auto;
-    border-radius: 30px;
+    width: fit-content;
+    position: sticky;
+}
+.card-img-top{
+    width: 200px;
+   
+}
+.text-muted{
+    font-size: 35px;
+    text-align: center;
+}
+.text-muted>button{
+    margin-left: 120px;
+    margin-bottom: 50px;
+    background-color: rgb(8, 136, 227);
+    padding:15px;
+    margin-top: 15px;
+    border-radius: 40px;
+    border: 2px solid rgb(8, 136, 227);
+    color: rgb(230, 230, 230);
+}
+.row{
+    margin: 50px 12px 50px 12px;
+}
+.error{
+    text-align: center;
+    font-size: 60px;
+    color: red;
 }
 
-.card-items{
-    width: 340px;
-    height: 350px;
-    background-color: aqua;
-    border-radius: 50px;
-    margin: 50 0 50 0;
-}
-.card-body> h5{
-    text-align: right;
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.card-body>p{
-    text-align: right;
+.construction{
+width: 400px;
+
 
 }
-
-.card-items>img{
-    width: 150px;
-   position: absolute;
-}
-
 footer{
     display: flex-inline;
     flex-flow: row wrap;
     justify-content: flex-end;
+    margin-top: 130px;
     
+}
+
+body{
+    background-image: url(../images/background.gif);
+    position: static;
 }
