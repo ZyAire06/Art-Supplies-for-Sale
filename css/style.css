@@ -5,26 +5,35 @@
     justify-content: space-around;
     font-size: 30px;
 }
-.navbar :hover{
-    background-color: rgb(229, 212, 78);
-    color: black;
+
+
+#checkout-btn{
+    display: grid;
+    justify-items: right;
+     font-size:50px;
+     color: rgb(255, 196, 0);
+     text-shadow: 2px 2px black;
+
+
 }
-nav{
-    background-color: rgb(255, 218, 7);
-    border-radius: 30px;
-    
+#checkout-btn:hover{
+    animation-name: cart;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation: shake 0.82s cubic-bezier(.10 ,7,.5, 3) both;
 }
-/*body{
-    background-color: aqua;
-    display:flex;
-    flex-wrap:wrap;                                   
-}*/
+nav a{
+    text-decoration: none;
+}
 
 h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 150px;
+    border-bottom:  2px solid black;
+    text-shadow: 6px 6px  #fcc601 ;
 
 }
+
 .navbar-brand{
     display: flex-inline;
     flex-direction: row;
@@ -32,17 +41,25 @@ h1{
     width: 35px;
     
 }
+#plaette{
+    color: #fcc601;
+    text-shadow: 2px 2px black ;
+}
+#p-brush{
+    color: #fcc601;
+    text-shadow: 6px 6px black ;
+}
+
+
 hr{
     border-top: 20px solid #fcc601;
 }
-/*div{
-    background-color: rgb(121, 81, 189);
-}*/
+
 h2{
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
-    background-color: rgb(255,218, 7);
+    background-color:#fcc601;
     padding: 100px;
     border-radius: 20px;
     
@@ -68,30 +85,33 @@ h4{
     font-size: 35px;
     padding-top: 20px;
 }
-.first-name{
-    padding-left: 20px;
-}
-.last-name{
-    padding-left: 20px;
-}
-.email{
-    padding-left: 20px;
-}
-.question{
-    padding-left: 20px;
-}
-.username{
-    padding-left: 20px;
-}
-.password{
-    padding-left: 20px;
-}
+
 .container-2{
-    width: 500px;
+    width: 800px;
     box-sizing: border-box;
-   background-color: rgb(255, 218, 7);
-    border-radius: 10px;
-    margin: 0 auto;
+
+    background:#fcc601;
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    grid-template-columns: auto;
+}
+#container-2{
+    display: grid;
+    justify-self: center;
+}
+input[type=text]{
+    width: 250px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+}
+input[type=text]:focus {
+    width: 300px;
+  }
+
+h4{
+    border-bottom: 2px solid black;
+   
 }
 
 #first-name{
@@ -113,20 +133,30 @@ h4{
     background-color: blanchedalmond;
     padding-left: 15px;
 }
+#selection{
+    margin: 20px 5px 35px 30px;
+    display: inline-block;
+    background-color: blanchedalmond;
+    padding-left: 15px; 
+}
    
-
-/* .login{
-    background-image: url(../images/login-background.jfif); 
-    position: relative;
-} */
 .container{
-    width: 18rem;
+    width: 350px;
     box-sizing: border-box;
-    background: transparent;
-   background-color: rgb(255, 218, 7);
+   background-color:#fcc601;
     border-radius: 10px;
     margin: 0 auto;
     
+}
+.container>h3{
+    text-align: center;
+}
+#profile{
+    display: grid;
+    justify-items: center;
+    font-size: 60px;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 #password{
@@ -142,16 +172,9 @@ h4{
     display: inline-block;
     background-color: blanchedalmond;
     padding-left: 15px;
+   
 }
 
-.login-button{
-  margin-left: 120px;
-  margin-bottom: 50px;
-  background-color: rgb(30, 227, 8);
-  padding:2px;
-  margin-top: 15px;
-  border-radius: 15px;
-}
 .supplies{
     width: fit-content;
     position: sticky;
@@ -171,8 +194,11 @@ h4{
     padding:15px;
     margin-top: 15px;
     border-radius: 40px;
-    border: 2px solid rgb(8, 136, 227);
     color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+.text-muted>button:hover{
+    background: black;
 }
 .row{
     margin: 50px 12px 50px 12px;
@@ -183,10 +209,102 @@ h4{
     color: red;
 }
 
-.construction{
-width: 400px;
+#error{
+    display: grid;
+    justify-items: center;
+    font-size: 200px;
+    color: orange;
+}
 
 
+.cart{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    
+    background: transparent;
+    box-shadow: -2px 0 4px rgb(230, 230, 230);
+
+}
+.cart-title{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.cart-product-title{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.product-price{
+    font-weight: 500;
+}
+#cart-quantity{
+    border: 1px solid black;
+    outline-color: rgb(255, 218, 7);
+    width: 50px;
+    text-align: center;
+}
+#cart-remove{
+    font-size: 24px;
+    color:  rgb(255, 7, 7);
+   cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    border-top: 2px solid black;
+}
+.total-title{
+    font-size: 15px;
+    font-weight: 600;
+}
+.total-price{
+    margin-left:  5px;
+}
+.button-buy{
+    margin-left: 120px;
+    margin-bottom: 50px;
+    background-color: rgb(8, 136, 227);
+    padding:15px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: rgb(230, 230, 230);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-buy:hover{
+    background: black;
+}
+#close-cart{
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    font-size: 15px;
+    color:black;
+    cursor: pointer;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 90px 200px 10px ;
+    align-items: center;
+    gap: 10px;
+    margin-top: 35px;
+   
+}
+.detail-box{
+    display: grid;
+    row-gap:  10px;
 }
 footer{
     display: flex-inline;
@@ -196,6 +314,23 @@ footer{
     
 }
 
+.footer a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 35px;
+    text-shadow: 6px 6px  #fcc601 ;
+}
+.footer{
+    display: grid;
+    justify-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footer #phone{
+    font-size: 35px;
+    text-shadow: 6px 6px  #fcc601 ;
+}
 body{
     background-image: url(../images/background.gif);
     position: static;

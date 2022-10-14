@@ -8,6 +8,8 @@
   <!-- CSS only-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+ 
   <!-- JavaScript Bundle with Popper-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -20,17 +22,18 @@
   <header>
     <div>
 
-      <img class="navbar-brand" src="images/header-img.png" alt="paint and paint brush">
-      <h1>Z's Crafts</h1>
-      <img class="navbar-brand" src="images/header-img-2.jfif" alt="Art Suupplies">
+      <nav >
+        <a href="checkout.html"><i class="bi bi-cart-plus" id="checkout-btn" ></i></a>
+       <h1>Z's Crafts</h1> 
+     </nav>
 
       <nav class="navbar navbar-expand-lg bg-light">
 
         <div class="container-fluid">
 
-          <img class="navbar-brand" src="../images/header-img.png" alt="paint and paint brushes">
-          Z's Crafts <img class="navbar-brand" src="../images/header-img-2.jfif" alt="Art Suupplies">
-          <!-- Ask kevin about imgs -->
+          <i class="bi bi-palette" id="plaette"></i>
+          Z's Crafts 
+          <i class="bi bi-brush-fill" id="p-brush"></i> 
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,9 +71,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="fabrics.html">Fabrics</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="paints.html">Canvas</a>
-              </li>
+        
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -80,22 +81,27 @@
         </div>
       </nav>
   </header>
-
+  <main>
+    <p class="error">404</p>
+    <i class="bi bi-cone" id="error"></i>
+  </main>
   </div>
   <footer>
     <h2> Contact and Follow Us: </h2>
-    <img src="../images/footer-img.jpg" alt="phone clipart" width="50px">
-    <p>Call: 412-###-###</p>
+    <div class="footer">
+     <i class="bi bi-telephone-fill" id="phone"></i>
+      <p>Call: 412-###-###</p>
 
-    <img src="../images/footer-img-2.jpg" alt="Email Icon" width="50px">
-    <p> Email: zscrafts@gmail.com</p>
-    <div class="social">
-      <a href=""><img src="../images/footer-img-3.jpg" alt="Instagram logo" width="60px"></a>
-      <a href=""><img src="../images/footer-img-4.jpg" alt="Tiktok logo" width="60px"></a>
+    <i class="bi bi-envelope-heart" id="phone"></i>
+    <p>Email: zscrafts@gmail.com</p>
+
+      <p>connect</p>
+      <a href=""><i class="bi bi-instagram" id="insta"></i></a>
+      <a href=""><i class="bi bi-tiktok" id="tok"></i></a>
 
     </div>
-  </footer>
 
+  </footer>
 </body>
 
 </html>

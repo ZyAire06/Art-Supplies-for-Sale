@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS only-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!-- JavaScript Bundle with Popper-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../css/style.css">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <header>
+        <div>
+
+          <nav >
+            <a href="checkout.html"><i class="bi bi-cart-plus" id="checkout-btn" ></i></a>
+           <h1>Z's Crafts</h1> 
+         </nav>
+    
+        
+      
+          
+            <nav class="navbar navbar-expand-lg bg-light">
+      
+              <div class="container-fluid">
+      
+                <i class="bi bi-palette" id="plaette"></i>
+                Z's Crafts 
+                <i class="bi bi-brush-fill" id="p-brush"></i> 
+      
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                  aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+      
+                <div class="collapse navbar-collapse" id="navbarScroll">
+      
+                  <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+      
+                      <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Login
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="registration-page.html">Create Account</a></li>
+                        <li><a class="dropdown-item" href="login-page.html">Login</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Membership Infomation</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="art-supplies.html">Art Supplies</a>
+                    </li>
+      
+                    <li class="nav-item">
+                      <a class="nav-link" href="canvas.html">Canvas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="fabrics.html">Fabrics</a>
+                    </li>
+                  
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+
+    </header>
+    <main>
+        <div class="cart">
+            <h4 class="cart-title">Your Cart</h4>
+
+            <div class="cart-items">
+                <div class="cart-box">
+
+                    <img src="../images/ohuhu-a.s" alt="Ohuhu Markers" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title"> Ohuhu  Markers</div>
+                        <div class="product-price">$140</div>
+                        <input type="number" name="1" id="cart-quantity">
+                    </div>
+                    <i class="bi bi-trash3-fill" id="cart-remove"></i>
+
+                    <img src="../images/art-kit-a.s" alt="Art Kit" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title"> Art Kit</div>
+                        <div class="product-price">$40.00</div>
+                        <input type="number" name="1" id="cart-quantity">
+                    </div>
+                    <i class="bi bi-trash3-fill" id="cart-remove"></i>
+                    
+                    <img src="../images/Pastel-pencil-a.s" alt="Pastel Penicls" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title"> Pastel Pencil</div>
+                        <div class="product-price">$52.25</div>
+                        <input type="number" name="1" id="cart-quantity">
+                    </div>
+                    <i class="bi bi-trash3-fill" id="cart-remove"></i>
+
+                 </div>
+                 <div class="total">
+                     <div class="total-title">Total</div>
+                     <div class="total-price">$0</div>
+                </div>
+
+                <button type="button" class="button-buy">Buy Now</button>
+
+                <i class="bi bi-x-square" id="close-cart"></i>
+            </div>
+
+        </div>
+        <form action="" id="container-2">
+            <div class="container-2">
+              <h4>Checkout</h4>
+      
+              <label class="fullname" for="fullname"> FullName</label>
+              <input type="text" name="fullname" id="fullname"><br>
+              
+              <label class="email" for="email">Email</label>
+              <input type="text" name="email" id="email-2"><br>
+
+              <label class="address" for="address"> Address</label>
+              <input type="text" name="address" id="address"><br>
+                <!-- Put a dropdown on city and state -->
+              <label class="city" for="city">City</label>
+              <input type="text" name="city" id="city"> <br>
+      
+              <label class="state" for="state">State</label>
+              <input type="state" name=" state" id="State"><br>
+      
+              <label class="zip code" for=" zip code"> Zip code</label>
+              <input type="zip code" name= "zip code" id="zip code">
+            </div>
+          </form>
+          <form action="" id="container-2">
+            <div class=" container-2">
+                <h4> Payment</h4>
+                <label class="name-on-card" for="name-on-card"> Name on Card</label>
+                <input type="text" name="name-on-card" id="name-on-card"><br>
+                
+                <label class="card-number" for="card-number">Credit Card Number</label>
+                <input type="text" name= "card-number" id= "card-number"><br>
+  
+                <label class="address" for="address"> Address</label>
+                <input type="text" name="address" id="address"><br>
+        
+                <label class="city" for="city">City</label>
+                <input type="text" name="city" id="city"> <br>
+        
+                <label class="exp-month-yr" for="exp-month-yr">Exp. Month and Year</label>
+                <input type="exp-month-yr" name="exp-month-yr" id="exp-month-yr"><br>
+        
+                <label class="cvc" for="cvc"> CVC</label>
+                <input type="cvc" name= "cvc" id="cvc">
+
+                <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                  </label>
+                <button class="button-buy">Submit</button>
+
+            </div>
+          </form>
+    </main>
+    <footer>
+      <h2> Contact and Follow Us: </h2>
+      <div class="footer">
+       <i class="bi bi-telephone-fill" id="phone"></i>
+        <p>Call: 412-###-###</p>
+  
+      <i class="bi bi-envelope-heart" id="phone"></i>
+      <p>Email: zscrafts@gmail.com</p>
+  
+        <p>connect</p>
+        <a href=""><i class="bi bi-instagram" id="insta"></i></a>
+        <a href=""><i class="bi bi-tiktok" id="tok"></i></a>
+  
+      </div>
+  
+    </footer>
+</body>
+</html>
